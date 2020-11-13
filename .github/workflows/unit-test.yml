@@ -1,14 +1,10 @@
 name: Unit testing
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
   build:
-
+    name: Unit testing
     runs-on: ubuntu-latest
 
     steps:
