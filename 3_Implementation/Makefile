@@ -31,6 +31,7 @@ all: $(SRC) $(BUILD)
 BUILD = build
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+	
 
 run:$(PROJECT_NAME)
 	./${PROJECT_OUTPUT}
@@ -39,6 +40,7 @@ doc:
 
 test:$(TEST_SRC) $(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 runtest:$(TEST_NAME)
 	./$(TEST_OUTPUT)
